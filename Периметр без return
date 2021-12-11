@@ -7,15 +7,27 @@ using System.Threading.Tasks;
 
 namespace SoloLearn
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{ static void Perimeter()
-        {} int a = int.Parse(Console.ReadLine());
-        int b = int.Parse(Console.ReadLine());
-        int c = int.Parse(Console.ReadLine());
-        int o=a+b+c;
-        Console.WriteLine(o);
-		}
-	}
+     class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+
+            {
+                
+                int stor1=int.Parse(Console.ReadLine());
+                int stor2=int.Parse(Console.ReadLine());
+                int stor3=int.Parse(Console.ReadLine());
+                Perimetr(stor1,stor2,stor3);
+            }
+        }
+        static void Perimetr(int a, int b, int c)
+        {
+
+            int P = a + b + c;
+            Console.WriteLine($"The perimeter is: {P}");
+            Console.ReadLine();
+        }
+
+    }
 }
