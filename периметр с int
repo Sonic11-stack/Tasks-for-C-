@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static int Perimetr(int x,int y,int z)
+        {
+            return x+y+z;
+        }
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                int fred1=int.Parse(Console.ReadLine());
+                int fred2=int.Parse(Console.ReadLine());
+                int fred3=int.Parse(Console.ReadLine());
+                Console.WriteLine($"The perimeter is {Perimetr(fred1,fred2,fred3)}");
+            }
+        }
+    }
+}
