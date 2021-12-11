@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{ int? minimum=null, maximum=null;
+            MinmaxSeq(ref minimum, ref maximum);
+            Console.WriteLine($"minimum:{minimum}\n maximum:{maximum}");
+        }
+
+        private static void MinmaxSeq(ref int? minimum, ref int? maximum)
+        {
+            Console.WriteLine("Enter half-sequence and end with zero:");
+            minimum = maximum = int.Parse(Console.ReadLine());
+            
+            if (minimum==0) return;
+            
+            var ger=int.Parse(Console.ReadLine());
+            while (ger!=0)
+            {
+                if (ger<minimum)
+                    minimum=ger;
+                if (ger>maximum)
+                    maximum = ger;
+                ger=int.Parse(Console.ReadLine());
+            }
+			
+		}
+	}
+}
